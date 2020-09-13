@@ -2,20 +2,20 @@ import Head from 'next/head'
 import { ApolloProvider } from "@apollo/client"
 import Client from '../util/client'
 import Layout from '../components/layout/component'
-import ThoughtList from '../components/thoughtList/component'
+import Form from '../components/form/component'
 
-const Home = () => {
+const About = () => {
   return (
     <ApolloProvider client={Client}>
         <Head>
-          <title>title</title>
+          <title> add</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <Layout title={"title"}>
-        <ThoughtList />
+        <Layout title={"add"} >
+            <Form />
         </Layout>
     </ApolloProvider>
   )
 }
 
-export default Home
+export default About
