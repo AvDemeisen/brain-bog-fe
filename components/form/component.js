@@ -25,7 +25,7 @@ const AlbumForm = () => {
 
   return (
     <Form onSubmit={handleSubmit}>
-        <Input type='text' change={handleChange} name='name' label='name' />
+        <Input type='text' change={handleChange} name='title' label='title' />
         <Input type='number' change={handleChange} name='year' label='year' />
         <Input type='text' change={handleChange} name='copy' label='copy' />
         <Button type='submit' label='add thought'/>
